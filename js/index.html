@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sajjan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 67px;
+      background-color: rgb(14, 14, 109);
+    }
+
+    nav ul {
+      display: flex;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 25PX;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(198, 198, 243);
+    }
+
+    .left {
+      font-size: 1.5rem;
+    }
+
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      margin: 100px 0;
+      align-items: center;
+
+    }
+
+    .firstSection>div {
+      width: 30%;
+    }
+
+    .leftSection {
+      font-size: 2.5rem;
+
+    }
+
+    .leftSection .btn {
+      padding: 12px;
+      background-color: #140814;
+      border: 2px solid white;
+      border-radius: 6px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .buttons {
+      margin-top: 49px;
+
+    }
+
+    .rightSection img {
+      width: 110%;
+      height: 80%;
+    }
+
+    .purple {
+      color: rgb(164, 108, 216);
+    }
+
+    #element {
+      color: rgb(164, 108, 216);
+    }
+
+    .secondSection {
+      max-width: 80vw;
+      margin: auto;
+      margin-bottom: 20px;
+      font-size: 1rem;
+      height: 80vh;
+    }
+
+    main hr {
+      border: 0;
+      background-color: rgb(37, 255, 255);
+      height: 1.5px;
+      margin: 20px 10px;
+    }
+
+    .textGray {
+      color: grey;
+    }
+
+    .secondSection .box{
+      background-color: white;
+      margin: 50px 1px;
+      height: 1px;
+      display: flex;
+    }
+
+    .secondSection .vertical {
+      height: 93px;
+      width: 1px;
+      background-color: white;
+      margin: 0px 100px;
+      
+    }
+
+    .developer-top {
+      width: 23px;
+      position: relative;
+      top: -32px;
+      left: -28px;
+
+    }
+
+    .verticalTitle {
+      position: relative;
+      top: 75px;
+      width: 150px;
+    }
+
+    .verticalDesc {
+      position: relative;
+      top: 80px;
+      color: gray;
+      width: 150px;
+      font-size: 9px;
+    }
+
+    footer {
+      background-color: #110211;
+      height: 200px;
+    }
+
+    .footer {
+      display: flex;
+      padding: 23px 120px;
+      justify-content:space-evenly;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    .footer > div {
+      width: 122px;
+    }
+
+    .text-center {
+      font-size: 10px;
+      text-align: center;
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">SAJJAN1346K</div>
+      <div class="right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About Me</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Products</a></li>
+          <li><a href="/">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstSection">
+      <div class="leftSection">
+        Hi, I am <span class="purple">Sajjan</span>
+        <div>
+          and I am a pro
+        </div>
+        <span id="element"></span>
+        <div class="buttons">
+          <button class="btn">Download Resume</button>
+          <button class="btn">Visit Github</button>
+        </div>
+
+      </div>
+      <div class="rightSection">
+        <img src="images/6840478.png" alt="">
+      </div>
+    </section>
+    <hr>
+    <section class="secondSection">
+      <span class="textGray">What I have done so far</span>
+      <h1>Work Experiences</h1>
+
+      <div class="box">
+        <div class="vertical">
+          <img class="developer-top" src="images/download.png" alt="">
+          <div class="verticalTitle">HTML developer (2020-2022)</div>
+          <div class="verticalDesc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium vel non quos tempora quasi delectus ea magnam expedita eos consequatur, minima exercitationem accusamus amet nam voluptates quibusdam excepturi. Suscipit!
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="developer-top" src="images/download.png" alt="">
+          <div class="verticalTitle">Node.js developer (2017-2018)</div>
+          <div class="verticalDesc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium vel non quos tempora quasi delectus ea magnam expedita eos consequatur, minima exercitationem accusamus amet nam voluptates quibusdam excepturi. Suscipit!
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="developer-top" src="images/download.png" alt="">
+          <div class="verticalTitle">Data Analyst for SpaceX (2019-2020)</div>
+          <div class="verticalDesc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium vel non quos tempora quasi delectus ea magnam expedita eos consequatur, minima exercitationem accusamus amet nam voluptates quibusdam excepturi. Suscipit!
+          </div>
+        </div>
+        
+        <div class="vertical">
+          <img class="developer-top" src="images/yt.png" alt="">
+          <div class="verticalTitle">Content Creator for Total Gaming Youtube (2018-2019)</div>
+          <div class="verticalDesc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium vel non quos tempora quasi delectus ea magnam expedita eos consequatur, minima exercitationem accusamus amet nam voluptates quibusdam excepturi. Suscipit!
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="developer-top" src="images/yt.png" alt="">
+          <div class="verticalTitle">Content Creator for Desi Gamers Youtube (2018-2019)</div>
+          <div class="verticalDesc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium vel non quos tempora quasi delectus ea magnam expedita eos consequatur, minima exercitationem accusamus amet nam voluptates quibusdam excepturi. Suscipit!
+          </div>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        Sajjan's Developer Portfolio
+      </div>
+      <div class="footer-second">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Biography</li>
+          <li>Inspiration</li>
+
+        </ul>
+      </div>
+      <div class="footer-third">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Biography</li>
+          <li>Inspiration</li>
+
+        </ul>
+      </div>
+      <div class="footer-fourth">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Biography</li>
+          <li>Inspiration</li>
+
+        </ul>
+      </div>
+      
+    </div>
+    <div class="text-center">
+      www.sajjanontop.com | All rights reserved.
+    </div>
+
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer.', 'Data Analyst.', 'Content Creator.', 'Social Media Manager.'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>

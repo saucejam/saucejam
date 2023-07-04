@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(26, 32, 49);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    position: relative;
+    left: 160vh;
+    top: 1vh;  
+}
+
+li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+.list {
+    background-color: rgb(32, 7, 7);
+    padding: 20px;
+    width: 100%;
+}
+
+.img {
+    position: relative;
+    left: 30px;
+    top: 8vh;
+    
+}
+
+.img h1 {
+    width: 30%;
+    font-size: 55px;
+}
+
+.img h1 span {
+    color: rgb(23, 133, 206);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.h-line {
+    position: relative;
+    width: 100%;
+    border-color: rgb(231, 230, 230);
+}
+
+.division-line {
+    height: 100%;
+    position: absolute;
+    left: 35%;
+
+}
+
+.words {
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+
+.words h3 {
+    margin-top: 20px;
+    margin-bottom: 60px;
+
+}
+
+.username {
+    margin-bottom: 30px;
+}
+
+.user {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    background: rgb(51, 44, 70);
+    width: 80px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20%;
+}
+
+.pass {
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    background: rgb(51, 44, 70);
+    width: 80px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20%;
+}
+
+.username {
+    padding: 5px 10px;
+}
+
+.password {
+    padding: 5px 10px;
+}
+
+.submit {
+    background: rgb(80, 13, 88);
+    border: none;
+    margin-left: 60px;
+    margin-top: 40px;
+    position: absolute;
+    left: -5px;
+    cursor: pointer;
+    padding: 8px 10px;
+    color: white;
+    border-radius: 20%;
+}
+
+.create-account {
+    position: absolute;
+    top: 370px;
+}
+
+.hi {
+    position: absolute;
+    top: 11px;
+}
+
+.error-username {
+    position: absolute;
+    top: 350px;
+    font-size: 12px;
+    left: 27px;
+    color: rgb(255, 0, 0);
+    
+}
+
+.about-h1, .help-h1, .withdraw-h1, .deposit-h1 {
+    position: relative;
+    text-align: center;
+    top: 20vh;
+}

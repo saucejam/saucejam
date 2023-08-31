@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Styles for larger screens */
+.main {
+    display: block;
+    position: relative;
+    top: 170px;
+    width: 30%;
+    left: 35%;
+    height: 39vh;
+}
+
+.firstrow, .secondrow, .lastrow {
+    display: flex;
+    justify-content: space-between;
+    height: 13vh;
+    align-items: center;
+}
+
+.r1c1, .r1c2, .r1c3, .r2c1, .r2c2, .r2c3, .r3c1, .r3c2, .r3c3 {
+    background-color: rgb(238, 227, 227);
+    height: 78px;
+    width: 31%;
+    border: 2px solid black;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 60px;
+    align-items: center;
+}
+
+p {
+    position: relative;
+    left: 40px;
+    top: 8px;
+}
+
+button {
+    font-family: sans-serif;
+    margin-left: 70vh;
+    position: relative;
+    top: -22vh;
+    font-size: 20px;
+    border: 2px solid rgb(4, 5, 22);
+    padding: 4px 10px;
+    cursor: pointer;
+    background-color: rgb(68, 68, 255);
+    color: white;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .main {
+        width: 80%;
+        left: 10%;
+    }
+
+    .r1c1, .r1c2, .r1c3, .r2c1, .r2c2, .r2c3, .r3c1, .r3c2, .r3c3 {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    button {
+        margin: 20px auto;
+        font-size: 16px;
+    }
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="firstrow">
+        <div class="r1c1" onclick="mainProcess(this); gameChecker()"></div>
+        <div class="r1c2" onclick="mainProcess(this); gameChecker()"></div>
+        <div class="r1c3" onclick="mainProcess(this); gameChecker()"></div>
+        </div>
+
+        <div class="secondrow">
+            <div class="r2c1" onclick="mainProcess(this); gameChecker()"></div>
+            <div class="r2c2" onclick="mainProcess(this); gameChecker()"></div>
+            <div class="r2c3" onclick="mainProcess(this); gameChecker()"></div>
+        </div>
+
+        <div class="lastrow">
+            <div class="r3c1" onclick="mainProcess(this); gameChecker()"></div>
+            <div class="r3c2" onclick="mainProcess(this); gameChecker()"></div>
+            <div class="r3c3" onclick="mainProcess(this); gameChecker()"></div>
+        </div>
+        <button onclick="resetBoard()">Reset</button>
+    </div>
+
+    <script>
+        let player = "a";
+        let r1c1 = document.querySelector(".r1c1");
+        let r1c2 = document.querySelector(".r1c2");
+        let r1c3 = document.querySelector(".r1c3");
+        let r2c1 = document.querySelector(".r2c1");
+        let r2c2 = document.querySelector(".r2c2");
+        let r2c3 = document.querySelector(".r2c3");
+        let r3c1 = document.querySelector(".r3c1");
+        let r3c2 = document.querySelector(".r3c2");
+        let r3c3 = document.querySelector(".r3c3");
+
+        function mainProcess(element) {
+            target = "." + element.className;
+            if (player == "a" && document.querySelector(target).innerHTML != "") {
+                player = "a";
+            }
+
+            else if (player == "b" && document.querySelector(target).innerHTML != "") {
+                player = "b";
+            }
+        
+            else if (player == "a") {
+                    document.querySelector(target).innerHTML = "<p>X</p>";
+                    player = "b";
+                }
+            
+            else if (player == "b") {
+                    document.querySelector(target).innerHTML = "<p>O</p>";
+                    player = "a";
+
+        }
+    }
+
+        function gameChecker() {
+            if (r1c1.textContent == "X" && r1c2.textContent == "X" && r1c3.textContent == "X") {
+                    alert("Player A wins.");
+                }
+            else if (r1c1.textContent == "O" && r1c2.textContent == "O" && r1c3.textContent == "O") {
+                alert("Player B wins.");
+            }
+
+            else if (r2c1.textContent == "X" && r2c2.textContent == "X" && r2c3.textContent == "X") {
+                    alert("Player A wins.");
+                }
+            else if (r2c1.textContent == "O" && r2c2.textContent == "O" && r2c3.textContent == "O") {
+                alert("Player B wins.");
+            }
+
+            else if (r3c1.textContent == "X" && r3c2.textContent == "X" && r3c3.textContent == "X") {
+                    alert("Player A wins.");
+                }
+            else if (r3c1.textContent == "O" && r3c2.textContent == "O" && r3c3.textContent == "O") {
+                alert("Player B wins.");
+            }
+            else if (r1c1.textContent == "X" && r2c1.textContent == "X" && r3c1.textContent == "X") {
+                    alert("Player A wins.");
+                }
+            else if (r1c1.textContent == "O" && r2c1.textContent == "O" && r3c1.textContent == "O") {
+                alert("Player B wins.");
+            }
+
+            else if (r1c2.textContent == "X" && r2c2.textContent == "X" && r3c2.textContent == "X") {
+                    alert("Player A wins.");
+                }
+            else if (r1c2.textContent == "O" && r2c2.textContent == "O" && r3c2.textContent == "O") {
+                alert("Player B wins.");
+            }
+
+            else if (r1c3.textContent == "X" && r2c3.textContent == "X" && r3c3.textContent == "X") {
+                    alert("Player A wins.");
+                }
+            else if (r1c3.textContent == "O" && r2c3.textContent == "O" && r3c3.textContent == "O") {
+                alert("Player B wins.");
+            }
+
+            else if (r1c1.textContent == "X" && r2c2.textContent == "X" && r3c3.textContent == "X") {
+                    alert("Player A wins.");
+                }
+            else if (r1c1.textContent == "O" && r2c2.textContent == "O" && r3c3.textContent == "O") {
+                alert("Player B wins.");
+            }
+
+            else if (r1c3.textContent == "X" && r2c2.textContent == "X" && r3c1.textContent == "X") {
+                    alert("Player A wins.");
+                }
+            else if (r1c3.textContent == "O" && r2c2.textContent == "O" && r3c1.textContent == "O") {
+                alert("Player B wins.");
+            }
+        }
+
+        function resetBoard() {
+            player = "a";
+            r1c1.innerHTML = "";
+            r1c2.innerHTML = "";
+            r1c3.innerHTML = "";
+            r2c1.innerHTML = "";
+            r2c2.innerHTML = "";
+            r2c3.innerHTML = "";
+            r3c1.innerHTML = "";
+            r3c2.innerHTML = "";
+            r3c3.innerHTML = "";
+            
+        }
+
+    </script>
+</body>
+</html>
